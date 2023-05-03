@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Used responsive-video-background and html5 video tag at the same time for this to work -->
+    <!-- NO JAVASCRIPT HAS BEEN USED -->
+    <!-- take a look at style.scss and webpack config file (file-loader in webpack5) -->
+    <!-- Also in dist folder the same video is copied twice. -->
+    <responsive-video-background
+      mp4="./videos/goas.mp4"
+      id="video-background"
+      class="demo1"
+      sizes="calc(100vh - 2rem)"
+      breakpoint="48rem"
+    >
+      video works
+    </responsive-video-background>
+    <video src="./videos/goas.mp4"></video>
+  </body>
+</html>
